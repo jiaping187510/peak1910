@@ -1,0 +1,286 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "微软雅黑"; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+header {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 0 5px #999999;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 999; }
+  header .main-header {
+    width: 1280px;
+    margin: 0 auto; }
+    header .main-header .left {
+      float: left; }
+      header .main-header .left ul {
+        height: 80px; }
+        header .main-header .left ul li {
+          display: inline-block; }
+          header .main-header .left ul li a {
+            display: inline-block;
+            color: black;
+            line-height: 110px;
+            padding: 0 17px;
+            overflow: hidden;
+            height: 80px; }
+    header .main-header .right {
+      float: right;
+      height: 26px; }
+      header .main-header .right li {
+        display: inline-block;
+        padding: 10px 0 0 0; }
+        header .main-header .right li a {
+          color: black;
+          font-size: 12px;
+          display: inline-block;
+          padding: 0 6px 0 4px;
+          border-right: 1px solid #6e6e6e; }
+      header .main-header .right :nth-child(8) a {
+        border: none; }
+    header .main-header .search {
+      text-align: right;
+      height: 30px; }
+      header .main-header .search li input {
+        width: 180px;
+        height: 25px;
+        outline: none; }
+      header .main-header .search li .search-icon {
+        float: right;
+        width: 29px;
+        height: 29px;
+        background: #f20015 url(../img/icon-seach.png) no-repeat center;
+        cursor: pointer; }
+
+.content {
+  margin-top: 112px;
+  width: 100%;
+  padding: 48px 6px 0;
+  overflow: hidden; }
+  .content .main-content {
+    width: 1280px;
+    margin: 0 auto; }
+    .content .main-content aside {
+      width: 20%;
+      float: left; }
+      .content .main-content aside .sort {
+        margin: 0 0 24px 0; }
+        .content .main-content aside .sort h1 {
+          font-weight: 500;
+          font-size: 30px;
+          width: 100%;
+          padding: 8px;
+          margin: 0 0 16px;
+          box-sizing: border-box;
+          border-bottom: 1px solid #f4f4f4; }
+        .content .main-content aside .sort ul li a {
+          line-height: 30px;
+          color: black;
+          padding: 0 0 0 8px; }
+      .content .main-content aside .filter {
+        margin: 0 0 24px 0; }
+        .content .main-content aside .filter h1 {
+          font-weight: 500;
+          font-size: 30px;
+          width: 100%;
+          padding: 8px;
+          margin: 0 0 16px;
+          box-sizing: border-box;
+          border-bottom: 1px solid #f4f4f4; }
+        .content .main-content aside .filter ul li {
+          position: relative; }
+          .content .main-content aside .filter ul li a {
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+            padding: 0 0 0 8px;
+            line-height: 30px;
+            color: black;
+            box-sizing: border-box; }
+          .content .main-content aside .filter ul li i {
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            position: absolute;
+            right: 26px;
+            top: 10px;
+            background: url(../img/plus.jpg); }
+    .content .main-content section {
+      width: 75%;
+      margin: 0 0 0 5%;
+      float: right; }
+      .content .main-content section .again {
+        text-decoration: underline;
+        margin: 0 0 16px;
+        padding: 0 0 8px; }
+      .content .main-content section .product {
+        width: 100%;
+        height: 32px;
+        background: #f4f4f4;
+        margin: 0 0 16px; }
+        .content .main-content section .product .first-li {
+          margin: 0;
+          padding: 0 16px 0 8px; }
+        .content .main-content section .product li {
+          display: inline-block;
+          margin: 0 16px 0 0;
+          padding: 0 8px 0 0;
+          line-height: 32px; }
+          .content .main-content section .product li i {
+            display: inline-block;
+            width: 9px;
+            height: 10px;
+            background: url(../img/top-arrow.jpg) no-repeat center;
+            margin: 0 0 0 2px; }
+          .content .main-content section .product li a {
+            color: black; }
+      .content .main-content section .shop {
+        width: 100%;
+        margin: 0 auto; }
+        .content .main-content section .shop li {
+          width: 22.5%;
+          height: 330px;
+          cursor: pointer;
+          display: inline-block;
+          padding: 12px;
+          margin: 0 20px 12px 0;
+          z-index: 10;
+          box-sizing: border-box; }
+          .content .main-content section .shop li:hover {
+            border: 1px solid #f60012; }
+          .content .main-content section .shop li a {
+            box-sizing: border-box; }
+          .content .main-content section .shop li img {
+            width: 100%; }
+          .content .main-content section .shop li .color {
+            width: 100%;
+            height: 56px;
+            font-size: 12px;
+            border-bottom: 1px solid #c7c6c6;
+            color: black;
+            margin: 0 0 10px;
+            line-height: 80px;
+            overflow: hidden; }
+          .content .main-content section .shop li .name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px;
+            color: black;
+            margin: 0 0 7px; }
+          .content .main-content section .shop li .price {
+            color: #999999;
+            text-decoration: line-through;
+            font-size: 12px;
+            float: left; }
+          .content .main-content section .shop li .price-new {
+            color: #f60012;
+            font-size: 12px;
+            float: right; }
+
+footer {
+  width: 100%; }
+  footer .container {
+    width: 100%;
+    height: 100px;
+    background: #f4f4f4; }
+    footer .container .container-box {
+      width: 1280px;
+      margin: 0 auto; }
+      footer .container .container-box li {
+        display: inline-block;
+        padding: 0 42px;
+        margin: 30px 0 0 0;
+        font-size: 24px;
+        color: #585858;
+        text-align: center;
+        border-right: 1px solid #c7c6c6; }
+        footer .container .container-box li:last-child {
+          border: none; }
+        footer .container .container-box li:first-child {
+          margin-left: 10px; }
+        footer .container .container-box li img {
+          margin-right: 12px;
+          width: 37px; }
+  footer .honor {
+    width: 100%;
+    height: 260px;
+    background: black; }
+    footer .honor .main-honor {
+      width: 1280px;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 35px 15px 0 15px; }
+      footer .honor .main-honor .honor-left {
+        float: left; }
+        footer .honor .main-honor .honor-left li {
+          float: left;
+          padding: 0 42px 0 0; }
+          footer .honor .main-honor .honor-left li a {
+            display: block;
+            color: white;
+            font-size: 14px;
+            line-height: 29px; }
+            footer .honor .main-honor .honor-left li a:nth-child(1) {
+              color: #cccccc;
+              font-weight: 600; }
+      footer .honor .main-honor .honor-right {
+        float: right; }
+        footer .honor .main-honor .honor-right .code1 {
+          float: right; }
+          footer .honor .main-honor .honor-right .code1 a {
+            display: block;
+            color: white;
+            width: 84px;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center; }
+        footer .honor .main-honor .honor-right .code2 {
+          float: right;
+          margin: 0 20px 0 0; }
+          footer .honor .main-honor .honor-right .code2 a {
+            display: block;
+            color: white;
+            width: 84px;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center; }
+      footer .honor .main-honor li {
+        float: right; }
+  footer .site {
+    background: black;
+    width: 100%;
+    height: 70px; }
+    footer .site .main-site {
+      width: 1280px;
+      height: 70px;
+      margin: 0 auto;
+      border-top: 1px solid #3e3e3e;
+      padding: 15px 0 0 0;
+      box-sizing: border-box; }
+      footer .site .main-site li {
+        color: white;
+        display: inline-block; }
+      footer .site .main-site .photos {
+        margin-right: 20px; }
+    footer .site .codes {
+      float: right;
+      height: 70px; }
+      footer .site .codes a {
+        display: inline-block;
+        margin-top: 10px; }

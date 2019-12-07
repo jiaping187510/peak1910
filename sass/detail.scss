@@ -1,0 +1,436 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+
+// herder
+
+header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 5px #999999;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 999;
+    .main-header{
+        width: 1280px;
+        margin:  0 auto;
+        .left{
+            float: left;
+            ul{
+                height: 80px;
+                li{
+                    display: inline-block;
+                    a{
+                        display: inline-block;
+                        color: black;
+                        line-height: 110px;
+                        padding: 0 17px;
+                        overflow: hidden;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+        .right{
+            float: right;
+            height: 26px;
+            li{
+                display: inline-block;
+                padding: 10px 0 0 0;
+                a{
+                    color: black;
+                    font-size: 12px;
+                    display: inline-block;
+                    padding: 0 6px 0 4px;
+                    border-right: 1px solid #6e6e6e;
+                }
+            }
+            :nth-child(8) a{
+                border:none;
+            }
+        }
+        .search{
+            text-align: right;
+            height: 30px;
+            li{
+
+                input{
+                    width: 180px;
+                    height: 25px;
+                    outline: none;
+                }
+                .search-icon{
+                    float: right;
+                    width: 29px;
+                    height: 29px;
+                    background: #f20015 url(../img/icon-seach.png) no-repeat center; 
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.content{
+    margin-top: 80px;
+    width: 100%;
+    .detail-container{
+        width:1280px;
+        margin: 0 auto;
+    } 
+}
+.box{
+    width: 100%;
+    background: #fff;
+}
+.box .content{
+    width:1142px;
+    
+    margin: 0 auto;
+}
+/* 购物车 */
+.box .content .tit{
+    width:100%;
+    height:613px;
+    padding:30px 0 20px;
+    background: #fff;
+    position: relative;
+}
+/* logo图 */
+.shop_Left{
+    width: 500px;
+    height:620px;
+    background: #fff;
+    float: left;
+    position: relative;
+}
+#imgList{
+    position: absolute;
+        top: 520px;
+        left: 11px;
+}
+#imgList img{
+    width: 84px;
+    height: 84px;
+    margin-right: 5px;
+}
+           
+#imgShow{
+    width: 500px;
+    height: 500px;
+    
+}
+
+.fd{
+    width: 153.125px;
+    height: 153.125px;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    cursor: move;
+}
+.min{
+    width: 500px;
+    height: 500px;
+    
+    float: left;
+    position: relative;
+    
+
+}
+.max{
+    width: 500px;
+    height: 500px;
+    float: left;
+    display: none;
+    overflow: hidden;
+    position: relative;
+    margin-left:30px ;
+    position: absolute;
+    left: 500px;
+    top: 20px;
+}
+.max img{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.shop-right{
+    width: 555px;
+    height: 370px;
+    background: #fff;
+    float: right;
+}
+.shop-right h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.shop-right .pay{
+    height:50px;
+    font-size: 30px;
+    line-height:50px;
+    color: red;
+    font-weight: bold;
+    padding:10px 0 ;
+    border-bottom:1px dashed #E2E2E2;
+}
+.shop-right .pay b{
+    float: left;
+}
+.shop-right .pay em{
+    float: left;
+}
+.shop-right .pay i{
+    font-size: 18px;
+    color: #818181;
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.shop-right .btn-tit{
+    width:555px;
+    height: 70px;
+    padding: 10px 0;
+}
+.shop-right .btn-tit .amount{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.btn-chid{
+    width: 128px;
+    height: 40px;
+    border: 1px solid #C9CACA ;
+}
+.btn-chid .btn-left{
+    width:40px;
+    height: 39px;
+    font-size: 28px;
+    float: left;
+    border: none;
+    background: #fff;
+    outline: none;
+    color: #000000;
+}
+.btn-chid .btn-center{
+    display:block;
+    width: 50px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    border:none;
+}
+.btn-chid .btn-right{
+    width:38px;
+    height: 39px;
+    font-size: 28px;
+    border: none;
+    background: #fff;
+    outline: none;
+    color: #000000;
+}
+.max-btn{
+    width:100% ;
+    height:50px ;
+    padding:20px 0 ;
+    border-bottom:1px dashed #E2E2E2;
+}
+.max-btn .orange{
+    width: 170px;
+    height: 48px;
+    background-color: #ff9802;
+    border:none;
+    border-radius:3px;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.max-btn .red{
+    width: 170px;
+    height: 48px;
+    background-color: red;
+    border:none;
+    border-radius:3px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+}
+
+.select{
+    width: 100%;
+    height: 58px;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+    line-height: 58px;
+    background: #fff;
+}
+.select .select-left{
+    color: #ff9802;
+    font-size: 16px;
+    border-right: 1px solid #f2f2f2;
+    padding: 0 15px;
+    
+}
+.select .select-right{
+    color: #757575;
+    font-size: 16px;
+    border-right: 1px solid #f2f2f2;
+    padding: 0 15px;
+}
+.select .select-right:hover{
+    color: red;
+}
+.select-buttom{
+    width: 100%;
+    .main-select-buttom{
+        width: 790px;
+        margin: 0 auto ;
+    }
+}
+.package{
+    height: 28px;
+    display: block;
+    text-align: center;
+}
+
+//footer
+footer{
+    width: 100%;
+    .container{
+        width: 100%;
+        height: 100px;
+        background: #f4f4f4;
+        .container-box{
+            width: 1280px;
+            margin: 0 auto;
+            li{
+                display: inline-block;
+                padding: 0 42px;
+                margin: 30px 0 0 0 ;
+                font-size: 24px;
+                color: #585858;
+                text-align: center;
+                border-right: 1px solid #c7c6c6;
+                &:last-child{
+                    border: none;
+                }
+                &:first-child{
+                    margin-left: 10px;
+                }
+                img{
+                    margin-right: 12px;
+                    width: 37px;
+                }
+            }
+        }
+    }
+    .honor{
+        width: 100%;
+        height: 260px;
+        background: black;
+
+        .main-honor{
+            width: 1280px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 35px 15px 0 15px ;
+            .honor-left{
+                float: left;
+                li{
+                    float: left;
+                    padding: 0 42px 0 0;
+                    a{
+                        display: block;
+                        color: white;
+                        font-size: 14px;
+                        line-height: 29px;
+                        &:nth-child(1){
+                            color: #cccccc;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            } 
+            .honor-right{
+                float: right;
+                .code1{
+                    float: right;
+                    a{
+                        display: block;
+                        color: white;
+                        width: 84px;
+                        font-size: 14px;
+                        line-height: 14px;
+                        text-align: center;
+                    }
+                }
+                .code2{
+                    float: right;
+                    margin: 0 20px 0 0;
+                    a{
+                        display: block;
+                        color: white;
+                        width: 84px;
+                        font-size: 14px;
+                        line-height: 14px;
+                        text-align: center;
+                    }
+                }
+            } 
+            li{
+                float: right;
+            }
+        }
+        
+    }
+    .site{
+        background: black;
+        width: 100%;
+        height: 70px;
+        .main-site{
+            width: 1280px;
+            height: 70px;
+            margin: 0 auto;
+            border-top: 1px solid #3e3e3e;
+            padding:15px 0 0 0;
+            box-sizing: border-box;
+            li{
+                color: white;
+                display: inline-block;
+            }
+            .photos{
+                margin-right: 20px;
+            } 
+        }
+        .codes{
+            float: right;
+            height: 70px;
+            a{
+                display: inline-block;
+                margin-top: 10px;
+            }
+        }
+    }
+}
